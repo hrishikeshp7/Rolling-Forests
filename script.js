@@ -1,8 +1,3 @@
-/*
-The below predefining of values is because my teacher
-is making me use strict to clean my lazy JS >:(
-*/
-
 "use strict";
 
 var sceneWidth;
