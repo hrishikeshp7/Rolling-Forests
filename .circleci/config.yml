@@ -21,6 +21,9 @@ jobs:
       - run: # Install the Netlify CLI
           name: Install Netlify CLI
           command: npm install -g netlify-cli
+      - run: 
+          name: Netlify Init 
+          command: netilfy init
       - run: # Build the site using the netlify.toml file
           name: Build site
           command: netlify build
