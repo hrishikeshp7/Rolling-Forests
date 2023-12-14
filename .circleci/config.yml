@@ -11,13 +11,13 @@ orbs:
 jobs:
   build:
     docker:
-      - image: circleci/node:14
+      - image: cimg/base:stable
     resource_class: medium # Use the latest Ubuntu image
     steps:
       - checkout # Checkout the code from the repository
       - run: # Install the Netlify CLI
           name: Install Netlify CLI
-          command: sudo npm install -g netlify-cli
+          command: npm install -g netlify-cli
       - run: # Build the site using the netlify.toml file
           name: Build site
           command: netlify build
