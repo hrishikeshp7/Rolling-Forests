@@ -10,7 +10,7 @@ orbs:
   
 jobs:
   build:
-    machine:
+    docker:
       - image: ubuntu-2004:202010-01
     resource_class: medium # Use the latest Ubuntu image
     steps:
