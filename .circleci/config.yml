@@ -13,7 +13,13 @@ jobs:
     docker:
       - image: cimg/base:stable
     resource_class: medium # Use the latest Ubuntu image
+    
     steps:
+      - checkout
+      - node/install:
+          install-yarn: true
+          node-version: '16.13'
+      - run: node --version
       - checkout # Checkout the code from the repository
       - run: # Install the Netlify CLI
           name: Install Netlify CLI
