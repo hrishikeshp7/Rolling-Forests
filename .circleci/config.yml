@@ -11,7 +11,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: ubuntu-2004:202010-01
+      - image: circleci/node:14
     resource_class: medium # Use the latest Ubuntu image
     steps:
       - checkout # Checkout the code from the repository
