@@ -4,10 +4,15 @@
 # For more details, please refer to https://circleci.com/docs/ and https://docs.netlify.com/
 
 version: 2.1
+
+orbs:
+  node: circleci/node@1.1.6
+  
 jobs:
   build:
-    docker:
-      - image: cimg/base:2021.10 # Use the latest Ubuntu image
+    machine:
+      - image: ubuntu-2004:202010-01
+    resource_class: medium # Use the latest Ubuntu image
     steps:
       - checkout # Checkout the code from the repository
       - run: # Install the Netlify CLI
