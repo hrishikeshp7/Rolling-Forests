@@ -17,7 +17,7 @@ jobs:
       - checkout # Checkout the code from the repository
       - run: # Install the Netlify CLI
           name: Install Netlify CLI
-          command: npm install -g netlify-cli
+          command: sudo npm install -g netlify-cli
       - run: # Build the site using the netlify.toml file
           name: Build site
           command: netlify build
