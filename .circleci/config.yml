@@ -4,10 +4,8 @@
 # For more details, please refer to https://circleci.com/docs/ and https://docs.netlify.com/
 
 version: 2.1
-
 orbs:
-  node: circleci/node@1.1.6
-  
+   node: circleci/node@5.1.0
 jobs:
   build:
     docker:
